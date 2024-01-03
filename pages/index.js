@@ -1,7 +1,7 @@
 
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
-import Header from '@/components/Header'
+ 
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +17,7 @@ export default function Home() {
       <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet"></link>
     </Head>
     <main>
-      <Header />
+      
     </main>
     </>
   )
