@@ -42,14 +42,12 @@ const Footer = () => {
                 {/* TravelloGo */}
               </h1>
               <p className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                facere ab hic accusamus omnis dolor voluptatibus illo, tempore
-                eum tenetur.
+              Discover Lybley for web and app development, e-commerce solutions, CRM services, and impactful digital and social media marketing. Elevate your brand's digital presence with our comprehensive suite of tailored solutions designed to drive growth and engagement.
               </p>
               <br />
               <div className="flex items-center gap-3 ">
                 <FaLocationArrow />
-                <p className="text-sm">A-9, A Block, Sector 59, Noida, Uttar Pradesh 201309</p>
+                <p className="text-sm">A-9, A Block, Sector 59, Noida, Uttar Pradesh 201301</p>
               </div>
               <div className="flex items-center gap-3 mt-3">
                 <FaMobileAlt />
