@@ -48,10 +48,10 @@ const Header = ({ handleOrderPopup }) => {
   };
   return (
     <>
-      <nav className="fixed hrefp-0 right-0 w-full z-50 bg-white backdrop-blur-sm text-black shadow-md">
-        <div className="bg-gradient-href-r from-primary href-secondary text-white ">
+      <nav className="fixed top-0 right-0 w-full z-50 bg-white backdrop-blur-sm text-black shadow-md">
+        <div className="bg-gradient-to-r from-primary to-secondary text-white ">
           <div className="container py-[2px] sm:block hidden">
-            <div className="flex items-center text-red-500 bg-black justify-between">
+            <div className="flex items-center justify-between">
               <p className="text-sm">20% off on next booking</p>
               <p>mobile no. +91 123456789</p>
             </div>
@@ -61,7 +61,7 @@ const Header = ({ handleOrderPopup }) => {
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-4  font-bold text-2xl">
               <Link href={"/"} onClick={() => window.scrollhref(0, 0)}>
-                <img src={"/Logo.png"} alt="" className="h-16" />
+                <img src={"/Logo.png"} alt="" className="h-16 max-w-full rounded-lg" />
               </Link>
               {/* <span>TCJ hrefurism</span> */}
             </div>
@@ -115,14 +115,14 @@ const Header = ({ handleOrderPopup }) => {
               </ul>
             </div>
             <div className="flex items-center gap-4">
-              <buthrefn
-                className="bg-gradient-href-r from-primary href-secondary hover:bg-bg-gradient-href-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
+              <button
+                className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
                 onClick={() => {
                   handleOrderPopup();
                 }}
               >
                 Book Now
-              </buthrefn>
+              </button>
               {/* Mobile Hamburger icon */}
               <div className="md:hidden block">
                 {showMenu ? (
