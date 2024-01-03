@@ -1,6 +1,6 @@
- 
+
 import React, { useState } from "react";
- 
+
 import { FaCaretDown } from "react-icons/fa";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import Link from "next/link";
@@ -8,8 +8,12 @@ import ResponsiveHeader from "./ResponsiveHeader";
 
 export const NavbarLinks = [
   {
-    name: "Home",
+    name: "Sevices",
     link: "/",
+  },
+  {
+    name: "Insights",
+    link: "/insights",
   },
   {
     name: "About",
@@ -19,10 +23,7 @@ export const NavbarLinks = [
     name: "Blogs",
     link: "/blogs",
   },
-  {
-    name: "Best Places",
-    link: "/best-places",
-  },
+
 ];
 
 const DropdownLinks = [
@@ -58,91 +59,97 @@ const Header = ({ handleOrderPopup }) => {
           </div>
         </div> */}
         <div className="bg-gradient-to-r from-[#FFFFFF] to-[#a7a7a9] ">
-        <div className="container py-3 sm:py-0">
-          <div className="flex justify-between items-center">
-            <div className="flex items-center gap-4  font-bold text-2xl">
-              <Link href={"/"} onClick={() => window.scrollhref(0, 0)}>
-                <img src={"/Logo.png"} alt="" className="h-16 max-w-full rounded-lg" />
-              </Link>
-              {/* <span>TCJ hrefurism</span> */}
-            </div>
-            <div className="hidden md:block">
-              <ul className="flex items-center gap-6 ">
-                <li className="py-4">
-                  <Link href="/" activeClassName="active">
-                    Home
-                  </Link>
-                </li>
-                <li className="py-4">
-                  <Link href="/blogs" activeClassName="active">
-                    Blogs
-                  </Link>
-                </li>
-                <li className="py-4">
-                  <Link href="/best-places" activeClassName="active">
-                    Best Places
-                  </Link>
-                </li>
-                <li className="py-4">
-                  <Link href="/about" activeClassName="active">
-                    About
-                  </Link>
-                </li>
-                <li className="group relative cursor-pointer">
-                  <a
-                    href="/#home"
-                    className="flex h-[72px] items-center gap-[2px]"
-                  >
-                    Quick Links{" "}
-                    <span>
-                      <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
-                    </span>
-                  </a>
-                  <div className="absolute -left-9 z-[9999] hidden w-[150px] rounded-md bg-white p-2 text-black group-hover:block shadow-md ">
-                    <ul className="space-y-3">
-                      {DropdownLinks.map((data) => (
-                        <li key={data.name}>
-                          <Link
-                            className="inline-block w-full rounded-md p-2 hover:bg-primary/20"
-                            href={data.link}
-                          >
-                            {data.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div className="flex items-center gap-4">
-              <button
-                className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
-                onClick={() => {
-                  handleOrderPopup();
-                }}
-              >
-                Book Now
-              </button>
-              {/* Mobile Hamburger icon */}
-              <div className="md:hidden block">
-                {showMenu ? (
-                  <HiMenuAlt1
-                    onClick={hrefggleMenu}
-                    className=" cursor-pointer transition-all"
-                    size={30}
-                  />
-                ) : (
-                  <HiMenuAlt3
-                    onClick={hrefggleMenu}
-                    className="cursor-pointer transition-all"
-                    size={30}
-                  />
-                )}
+          <div className="container py-3 sm:py-0">
+            <div className="flex justify-between items-center">
+              <div className="flex items-center gap-4  font-bold text-2xl">
+                <Link href={"/"} onClick={() => window.scrollhref(0, 0)}>
+                  <img src={"/Logo.png"} alt="" className="h-16 max-w-full rounded-lg" />
+                </Link>
+                {/* <span>TCJ hrefurism</span> */}
+              </div>
+              <div className="hidden md:block">
+                <ul className="flex items-center gap-6 ">
+                  <li className="py-4">
+                    <Link href="/sevices" activeClassName="active">
+                      Services
+                    </Link>
+                  </li>
+                  <li className="py-4">
+                    <Link href="/insights" activeClassName="active">
+                      Insights
+                    </Link>
+                  </li>
+                  <li className="py-4">
+                    <Link href="/blogs" activeClassName="active">
+                      Blogs
+                    </Link>
+                  </li>
+                  
+                  <li className="py-4">
+                    <Link href="/about" activeClassName="active">
+                      About
+                    </Link>
+                  </li>
+                  <li className="py-4">
+                    <Link href="/careers" activeClassName="active">
+                      Careers
+                    </Link>
+                  </li>
+                  <li className="group relative cursor-pointer">
+                    <a
+                      href="/#home"
+                      className="flex h-[72px] items-center gap-[2px]"
+                    >
+                      Quick Links{" "}
+                      <span>
+                        <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
+                      </span>
+                    </a>
+                    <div className="absolute -left-9 z-[9999] hidden w-[150px] rounded-md bg-white p-2 text-black group-hover:block shadow-md ">
+                      <ul className="space-y-3">
+                        {DropdownLinks.map((data) => (
+                          <li key={data.name}>
+                            <Link
+                              className="inline-block w-full rounded-md p-2 hover:bg-primary/20"
+                              href={data.link}
+                            >
+                              {data.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div className="flex items-center gap-4">
+                <button
+                  className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
+                  onClick={() => {
+                    handleOrderPopup();
+                  }}
+                >
+                 Contact us
+                </button>
+                {/* Mobile Hamburger icon */}
+                <div className="md:hidden block">
+                  {showMenu ? (
+                    <HiMenuAlt1
+                      onClick={hrefggleMenu}
+                      className=" cursor-pointer transition-all"
+                      size={30}
+                    />
+                  ) : (
+                    <HiMenuAlt3
+                      onClick={hrefggleMenu}
+                      className="cursor-pointer transition-all"
+                      size={30}
+                    />
+                  )}
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </div>
         <ResponsiveHeader setShowMenu={setShowMenu} showMenu={showMenu} />
       </nav>
