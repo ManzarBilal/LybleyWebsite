@@ -11,34 +11,43 @@ import {
 
 const FooterLinks = [
   {
-    title: "Home",
-    link: "/",
+    title: "Services",
+    link: "/services",
+  },
+  {
+    title: "Insights",
+    link: "/insights",
   },
   {
     title: "About",
     link: "/about",
   },
-  {
-    title: "Best Places",
-    link: "/best-places",
-  },
+  
   {
     title: "Blogs",
     link: "/blogs",
+  },
+  {
+    title: "Careers",
+    link: "/careers",
+  },
+  {
+    title: "Contact us",
+    link: "/contact",
   },
 ];
 
 const Footer = () => {
   return (
     <>
-      <div className="dark:bg-gray-950 py-10 relative overflow-hidden">
+      <div className="dark:bg-gray-950  relative overflow-hidden  ">
          <div className="bg-gradient-to-r from-[#a7a7a9] to-[#FFFFFF] ">
         <div className="container">
           {/* <div className="grid md:grid-cols-3 py-5 bg-white/80 backdrop-blur-sm rounded-t-xl"> */}
           <div className="grid md:grid-cols-3 py-5   rounded-t-xl">
             <div className="py-8 ">
               <h1 className="flex items-center gap-3 text-xl sm:text-3xl font-bold text-justify sm:text-left">
-                <img src={"/Logo.png"} alt="" className="max-h-[64px] rounded-lg" />
+               <Link href={"/"}> <img src={"/Logo.png"} alt="" className="max-h-[64px] rounded-lg" /></Link>
                 {/* TravelloGo */}
               </h1>
               <p className="text-sm">
@@ -54,19 +63,7 @@ const Footer = () => {
                 <p>+91 7011071202</p>
               </div>
               {/* social handles */}
-              <div>
-                <div className="flex items-center gap-3 mt-6">
-                  <Link href="#">
-                    <FaInstagram className="text-3xl" />
-                  </Link>
-                  <Link href="#">
-                    <FaFacebook className="text-3xl" />
-                  </Link>
-                  <Link href="#">
-                    <FaLinkedin className="text-3xl" />
-                  </Link>
-                </div>
-              </div>
+             
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
               <div>
@@ -131,10 +128,23 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div>
-            <div className="text-center py-5 text-primary border-t-2 border-gray-300/50   text-white">
+          <div className="flex justify-between items-center  border-t-2 border-gray-300/50 ">
+            <div className="text-center py-5 text-primary  text-white">
               @copyright 2024 All rights reserved || Made  by Lybley India Pvt Ltd.
             </div>
+            <div className=" ">
+                <div className="flex items-center gap-3  ">
+                  <Link href="#">
+                    <FaInstagram className="text-3xl" />
+                  </Link>
+                  <Link href="#">
+                    <FaFacebook className="text-3xl" />
+                  </Link>
+                  <Link href="#">
+                    <FaLinkedin className="text-3xl" />
+                  </Link>
+                </div>
+              </div>
           </div>
         </div>
         </div>
