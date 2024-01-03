@@ -4,7 +4,7 @@ import Link from "next/link";
 import { NavbarLinks } from "./Header";
 
 const ResponsiveHeader = ({ showMenu, setShowMenu }) => {
-  console.log("showMenu", showMenu);
+  // console.log("showMenu", showMenu);
   return (
     <div
       className={`${
