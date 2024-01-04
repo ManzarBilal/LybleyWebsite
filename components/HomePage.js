@@ -5,17 +5,17 @@ const HomePage = () => {
 
     return (
         <div className=''>
-            <div className="h-[600px] relative">
+            <div className="h-[680px] relative">
                 <video
                     autoPlay
                     loop
                     muted
-                    className="absolute right-0 top-0 h-[600px] w-full object-cover z-[-1]"
+                    className="absolute right-0 top-0 h-[680px] w-full object-cover z-[-1]"
                 >
                     <source src={"/videoHome.mp4"} type="video/mp4" />
                 </video>
-                <div className=" grid md:grid-cols-2 sm:grid-cols-1   bg-black/20 h-full">
-                    <div className="h-full flex justify-center items-center p-4 bg-primary/10">
+                <div className=" grid md:grid-cols-2 sm:grid-cols-1    h-full">
+                    <div className="h-full flex justify-center items-center p-4  ">
                         <div className="container grid grid-cols-1 gap-2">
                             <div className='animatedLeft text-secondary font-bold text-xl'>We are creative </div>
                             <div className='animatedLeft text-white font-bold text-5xl'>Best IT <span className='text-secondary '>Solution</span></div>

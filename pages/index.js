@@ -2,6 +2,7 @@
 import HomePage from '@/components/HomePage'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
+import Services from './services'
 
 
 
@@ -23,6 +24,7 @@ export default function Home() {
       >
         <div >
          <HomePage />
+         <Services home={true}/>
         </div>
 
       </main>
