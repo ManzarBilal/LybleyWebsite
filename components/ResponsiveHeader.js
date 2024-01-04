@@ -37,7 +37,7 @@ const ResponsiveHeader = ({ showMenu, setShowMenu }) => {
       </div>
       <div className="footer">
         <h1>
-          Made by <a href=" #">Lybley India Pvt Ltd.</a>{" "}
+          Made by <Link href="/">Lybley India Pvt Ltd.</Link> 
         </h1>
       </div>
     </div>

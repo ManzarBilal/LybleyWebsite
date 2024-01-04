@@ -14,6 +14,10 @@ module.exports = {
         secondary: "#00c3c7",
         dark: "#ffcf22",
       },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
+
       container: {
         center: true,
         padding: {

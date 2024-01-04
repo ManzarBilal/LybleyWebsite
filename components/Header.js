@@ -58,7 +58,7 @@ const Header = ({ handleOrderPopup }) => {
             </div>
           </div>
         </div> */}
-        <div className="bg-gradient-to-r from-[#FFFFFF] to-[#a7a7a9] ">
+        <div className="bg-gradient-to-r from-[#FFFFFF] to-[#a7a7a9]  ">
           <div className="container py-3 sm:py-0">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-4  font-bold text-2xl">
@@ -70,41 +70,41 @@ const Header = ({ handleOrderPopup }) => {
               <div className="hidden md:block">
                 <ul className="flex items-center gap-6 ">
                   <li className="py-4">
-                    <Link href="/sevices" activeClassName="active">
+                    <Link href="/services" className="text-decoration-none" >
                       Services
                     </Link>
                   </li>
                   <li className="py-4">
-                    <Link href="/insights" activeClassName="active">
+                    <Link href="/insights"  >
                       Insights
                     </Link>
                   </li>
                   <li className="py-4">
-                    <Link href="/blogs" activeClassName="active">
+                    <Link href="/blogs"  >
                       Blogs
                     </Link>
                   </li>
                   
                   <li className="py-4">
-                    <Link href="/about" activeClassName="active">
+                    <Link href="/about" activeClassName="active" >
                       About
                     </Link>
                   </li>
                   <li className="py-4">
-                    <Link href="/careers" activeClassName="active">
+                    <Link href="/careers"  >
                       Careers
                     </Link>
                   </li>
                   <li className="group relative cursor-pointer">
-                    <a
-                      href="/#home"
+                    <Link
+                      href="/"
                       className="flex h-[72px] items-center gap-[2px]"
                     >
                       Quick Links{" "}
                       <span>
                         <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
                       </span>
-                    </a>
+                    </Link>
                     <div className="absolute -left-9 z-[9999] hidden w-[150px] rounded-md bg-white p-2 text-black group-hover:block shadow-md ">
                       <ul className="space-y-3">
                         {DropdownLinks.map((data) => (

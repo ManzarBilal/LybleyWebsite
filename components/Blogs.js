@@ -1,5 +1,6 @@
-import Card from "@/components/Card";
 import React from "react";
+ 
+import Card from "./Card";
 
 const BlogsData = [
   {
@@ -31,7 +32,7 @@ const BlogsData = [
   },
 ];
 
-const blogs  = () => {
+const Blogs  = () => {
   return (
     <>
       <div className="dark:bg-gray-900 dark:text-white py-10">
@@ -50,4 +51,4 @@ const blogs  = () => {
   );
 };
 
-export default blogs;
+export default Blogs;
