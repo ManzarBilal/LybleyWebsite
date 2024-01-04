@@ -8,3 +8,19 @@
   }
 }
  
+.animatedText {
+  opacity: 0; /* Initially hidden */
+  transform: translateX(100%); /* Start position at the bottom */
+  animation: slideFromBottom 2s ease forwards;
+}
+
+@keyframes slideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateX(100%); /* Starting position */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Moves up to its final position */
+  }
+}
