@@ -69,7 +69,7 @@ const Header = ({ handleOrderPopup }) => {
                 {/* <span>TCJ hrefurism</span> */}
               </div>
               <div className="hidden md:block">
-                <ul className="flex items-center gap-6 ">
+                <ul className="flex items-center gap-6 animatedRight ">
                   <li className="py-4">
                     <Link href="/services" className={`text-decoration-none ${router.pathname==="/services" ? "text-primary" : "" }`} >
                       Services
