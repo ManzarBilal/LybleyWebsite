@@ -1,4 +1,5 @@
 
+import Banner from '@/components/Banner'
 import HomePage from '@/components/HomePage'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
@@ -25,6 +26,8 @@ export default function Home() {
         <div >
          <HomePage />
          <Services home={true}/>
+         <Banner />
+     
         </div>
 
       </main>
