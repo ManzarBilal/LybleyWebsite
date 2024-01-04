@@ -9,7 +9,7 @@ const  Card = ({ isServices, image, date, title, description, author }) => {
       <Link
         href={`/blogs/${title}`}
         onClick={() => {
-          window.scrollTo(0, 0);
+          window?.scrollTo(0, 0);
           // window.scroll({
           //   top: 0,
           //   left: 0,
