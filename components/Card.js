@@ -2,7 +2,8 @@ import Link from "next/link";
 import React from "react";
  
 
-const  Card = ({ image, date, title, description, author }) => {
+const  Card = ({ isServices, image, date, title, description, author }) => {
+    
   return (
     <>
       <Link
@@ -17,15 +18,20 @@ const  Card = ({ image, date, title, description, author }) => {
         }}
         state={{ image, date, title, description, author }}
       >
-        <div className="p-4 shadow-lg transition-all duration-500 hover:shadow-xl dark:bg-slate-950 dark:text-white">
+        <div className="p-4 shadow-lg transition-all duration-500 hover:shadow-xl dark:bg-slate-950 dark:text-white rounded-lg">
           <div className="overflow-hidden">
             <img
               src={image}
               alt="No image"
-              className="mx-auto h-[250px] w-full object-cover transition duration-700 hover:skew-x-2 hover:scale-110"
+              className="mx-auto h-[200px] w-[200px] object-cover transition duration-700 hover:skew-x-2 hover:scale-110"
             />
           </div>
-          <div className="flex justify-between pt-2 text-slate-600">
+        {isServices  
+       ? <div className="space-y-2 py-1 flex justify-center">
+            <h1 className="line-clamp-1 font-bold">{title}</h1>
+          </div>
+       : <>
+         <div className="flex justify-between pt-2 text-slate-600">
             <p>{date}</p>
             <p className="line-clamp-1">By {author}</p>
           </div>
@@ -33,6 +39,8 @@ const  Card = ({ image, date, title, description, author }) => {
             <h1 className="line-clamp-1 font-bold">{title}</h1>
             <p className="line-clamp-2">{description}</p>
           </div>
+          </>
+}
         </div>
       </Link>
     </>
