@@ -5,6 +5,7 @@ import { FaCaretDown } from "react-icons/fa";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import Link from "next/link";
 import ResponsiveHeader from "./ResponsiveHeader";
+import { useRouter } from "next/router";
 
 export const NavbarLinks = [
   {
@@ -43,7 +44,7 @@ const DropdownLinks = [
 
 const Header = ({ handleOrderPopup }) => {
   const [showMenu, setShowMenu] = useState(false);
-
+  const router=useRouter();
   const hrefggleMenu = () => {
     setShowMenu(!showMenu);
   };
@@ -70,28 +71,28 @@ const Header = ({ handleOrderPopup }) => {
               <div className="hidden md:block">
                 <ul className="flex items-center gap-6 ">
                   <li className="py-4">
-                    <Link href="/services" className="text-decoration-none" >
+                    <Link href="/services" className={`text-decoration-none ${router.pathname==="/services" ? "text-primary" : "" }`} >
                       Services
                     </Link>
                   </li>
                   <li className="py-4">
-                    <Link href="/insights"  >
+                    <Link href="/insights" className={`text-decoration-none ${router.pathname==="/insights" ? "text-primary" : "" }`} >
                       Insights
                     </Link>
                   </li>
                   <li className="py-4">
-                    <Link href="/blogs"  >
+                    <Link href="/blogs" className={`text-decoration-none ${router.pathname==="/blogs" ? "text-primary" : "" }`} >
                       Blogs
                     </Link>
                   </li>
                   
                   <li className="py-4">
-                    <Link href="/about" activeClassName="active" >
+                    <Link href="/about" className={`text-decoration-none ${router.pathname==="/about" ? "text-primary" : "" }`} >
                       About
                     </Link>
                   </li>
                   <li className="py-4">
-                    <Link href="/careers"  >
+                    <Link href="/careers" className={`text-decoration-none ${router.pathname==="/careers" ? "text-primary" : "" }`} >
                       Careers
                     </Link>
                   </li>
