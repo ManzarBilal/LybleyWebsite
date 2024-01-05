@@ -88,7 +88,7 @@ const HomePage = () => {
                     autoPlay
                     loop
                     muted
-                    className="absolute right-0 top-0 h-[680px] w-full object-cover z-[-1]"
+                    className="absolute right-0 top-0 h-full w-full object-cover z-[-1]"
                 >
                     <source src={"/videoHome.mp4"} type="video/mp4" />
                 </video>
@@ -100,13 +100,13 @@ const HomePage = () => {
                             <div className='animatedLeft text-white font-bold text-5xl'> Company</div>
                             <div className='animatedLeft mt-3 text-white text-xl'>
                                 <TypeAnimation sequence={[
-                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success. Specializing in: Web Development',1000,
-                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success. Specializing in: E-commerce Solutions',1000,
-                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success. Specializing in: Mobile App Development',1000,
-                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success. Specializing in: UI/UX Design',1000,
-                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success. Specializing in: Digital Marketing',1000,
+                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success. Specializing in: Web Development',3000,
+                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success. Specializing in: Mobile App Development',3000,
+                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success. Specializing in: Digital Marketing',3000,
+                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success. Specializing in: UI/UX Design',3000,
+                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success. Specializing in: E-commerce-Solutions',3000,
                                   'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success. Specializing in: Social Media Marketing',
-                                  1000
+                                  3000
                                 ]}
                                 wrapper='span'
                                 speed={50}
