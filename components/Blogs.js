@@ -32,7 +32,7 @@ const BlogsData = [
   },
 ];
 
-const Blogs  = () => {
+const Blogs  = (props) => {
   return (  
     <>
       <div className="dark:bg-gray-900 dark:text-white py-10">

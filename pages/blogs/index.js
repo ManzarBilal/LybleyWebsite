@@ -34,7 +34,7 @@ const BlogsData = [
 const blogs  = () => {
   return (
     <>
-      <div className="dark:bg-gray-900 dark:text-white py-10">
+      <div className="dark:bg-gray-900 dark:text-white py-10 mt-12">
         <section data-aos="fade-up" className="container ">
           <h1 className=" my-8 border-l-8 border-primary/50 py-2 pl-2 text-3xl font-bold">
             Our Latest Blogs
