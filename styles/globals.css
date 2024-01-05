@@ -41,3 +41,8 @@
     transform: translateY(0); /* Moves up to its final position */
   }
 }
+.contactUsBg{
+  background-image: url("/contactUs.jpg");
+  object-fit: cover;
+   
+}
