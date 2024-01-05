@@ -38,8 +38,7 @@ const HomePage = () => {
                                 </div>
                             <div className='animatedLeft mt-4'>
                                 <button
-                                    className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1  "
-
+                                    className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1"
                                 >
                                     Explore More
                                 </button>
