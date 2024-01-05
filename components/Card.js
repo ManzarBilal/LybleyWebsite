@@ -18,7 +18,7 @@ const  Card = ({ isServices, image, date, title, description, author,index }) =>
         }}
         state={{ image, date, title, description, author }}
       >
-        <div className={`p-4 bg-gradient-to-r ${index>=3 ? "from-[#FFFFFF] to-[#a7a7a9]" : "from-[#a7a7a9] to-[#FFFFFF]"} shadow-lg transition-all duration-500 hover:shadow-xl dark:bg-slate-950 dark:text-white rounded-lg m-2`}>
+        <div className={`p-4 shadow-lg transition-all duration-500 hover:shadow-xl dark:bg-slate-950 dark:text-white rounded-lg m-2`}>
           <div className="overflow-hidden">
             <img
               src={image}

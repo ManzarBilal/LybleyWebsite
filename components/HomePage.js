@@ -1,11 +1,89 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
-
+import Slider from "react-slick";
+const testimonialData = [
+    {
+        id: 1,
+        image: "webDevelopment.png",
+        title: "Web Development",
+        description: "Empowering your digital presence. We specialize in bespoke web development, creating standout websites that blend innovation and functionality, ensuring your online success"
+      },
+      {
+        id: 2,
+        image: "mobileApp.png",
+        title: "Mobile App Development",
+        description: "Transforming ideas into dynamic apps. Our mobile app development crafts innovative solutions for your digital needs, ensuring seamless user experiences that resonate and captivate your audience"
+    
+      },
+      {
+        id: 3,
+        image: "digitalMarketing.png",
+        title: "Digital Marketing",
+        description: "Our digital marketing strategies are designed to propel your brand forward, leveraging targeted approaches that maximize visibility and engagement, ensuring your success in the digital sphere."
+    
+      },
+      {
+        id: 4,
+        image: "uiUx.png",
+        title: "UI/UX Design",
+        description: "Crafting captivating experiences. Our UI/UX design expertise creates intuitive interfaces that blend creativity and functionality, ensuring memorable digital experiences."
+      },
+      {
+        id: 5,
+        image: "eCommerse.png",
+        title: "E-Commerce Solution",
+        description: "Transforming online retail experiences. Our tailored e-commerce solutions seamlessly merge intuitive design and robust functionality, elevating your customers' shopping journey"
+    
+      },
+      {
+        id: 6,
+        image: "mediaMarketing.png",
+        title: "Social Media Marketing",
+        description: "Boosting your online presence. Our social media strategies craft engaging campaigns, amplifying your brand's voice to authentically connect with your audience"
+      },
+  ];
 const HomePage = () => {
-
+    var settings = {
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        cssEase: "linear",
+        pauseOnHover: true,
+        pauseOnFocus: true,
+        responsive: [
+          {
+            breakpoint: 10000,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+            },
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              initialSlide: 1,
+            },
+          },
+          {
+            breakpoint: 640,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      };
     return (
         <div className=''>
-            <div className="h-[680px] relative">
+            <div className="h-[680px] relative bg-black bg-opacity-30">
                 <video
                     autoPlay
                     loop
@@ -51,6 +129,29 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
+                    <div
+            data-aos="zoom-in"
+            data-aos-duration="300"
+            className="grid grid-cols-1 max-w-[500px] mx-auto flex justify-center items-center"
+          >
+            <Slider {...settings}>
+              {testimonialData.map(({ id, title, description, image }) => {
+                return (
+                  <div key={id} className="my-6">
+                    <div className="flex flex-col justify-center items-center gap-4 text-center p-4 mx-4 rounded-xl dark:bg-gray-800 relative">
+                      <img
+                        src={image}
+                        alt=""
+                        className="rounded-full h-[200px] block mx-auto"
+                      />
+                      <h1 className="text-xl text-white font-bold">{title}</h1>
+                      <p className="text-white text-sm">{description}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </Slider>
+          </div>
                 </div>
             </div>
         </div>
