@@ -4,24 +4,29 @@ const careers = () => {
   const handleScroll = () => {
     // Scrolls down 100 pixels vertically on button click
     window.scrollTo({
-      top: window.pageYOffset + 320,
+      top: window.pageYOffset + 410,
       behavior: 'smooth', // Optional: Smooth scrolling animation
     });
   };
   return (
-    <div className='container mt-20'>
-      <h1 className='text-center font-bold text-3xl pt-12'>Careers</h1>
-      <p className='text-center font-bold mt-4 text-1xl'> Join Our Team and Shape the Future of Technology!</p>
+    <> 
+      <div className="bg-cover bg-center h-[400px]" style={{ backgroundImage: 'url("career.jpg")',marginTop:"70px" }}> 
+      <div className='bg-black bg-opacity-40  h-[400px]'>
+      <h1 className='text-center text-white font-bold text-4xl pt-12'>Careers</h1>
+      <p className='text-center text-white font-bold mt-4 text-2xl'> Join Our Team and Shape the Future of Technology!</p>
       <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 mt-2'>
         <div></div>
-        <p className='text-center col-span-2 '> Welcome to Lybley, where innovation meets opportunity. Are you ready to be part of a dynamic team that thrives on pushing boundaries and creating cutting-edge solutions in the world of technology? At Lybley, we're passionate about fostering an environment that encourages creativity, collaboration, and continuous learning.</p>
+        <p className='text-center text-white col-span-2 '> Welcome to Lybley, where innovation meets opportunity. Are you ready to be part of a dynamic team that thrives on pushing boundaries and creating cutting-edge solutions in the world of technology? At Lybley, we're passionate about fostering an environment that encourages creativity, collaboration, and continuous learning.</p>
         <div></div>
       </div>
       <div className='text-center mt-8'>
         <button className='bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full' onClick={handleScroll}>Join our team</button>
       </div>
+    </div>
+    </div>
+     <div className='container mt-16'>
       <div className='text-center text-2xl font-bold mt-12'>Why Choose Lybley?</div>
-      <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 flex items-center'>
+      <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 flex items-center justify-center'>
         <div className=''>
       <div className='mt-2 text-justify'> <span className='font-bold'> Innovative Projects:</span> Dive into exciting projects that challenge your skills and expand your horizons. From AI and machine learning to cybersecurity and cloud computing, be at the forefront of groundbreaking technologies.</div>
 
@@ -73,6 +78,7 @@ const careers = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
