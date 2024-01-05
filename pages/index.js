@@ -4,6 +4,7 @@ import HomePage from '@/components/HomePage'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Services from './services'
+import Testimonial from '@/components/Testomonials'
 
 
 
@@ -24,10 +25,10 @@ export default function Home() {
         className="flex flex-col   " style={{ marginTop: "70px" }}
       >
         <div >
-         <HomePage />
-         <Services home={true}/>
-         <Banner />
-     
+          <HomePage />
+          <Services home={true} />
+          <Banner />
+          <Testimonial />
         </div>
 
       </main>

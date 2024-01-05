@@ -124,14 +124,14 @@ const Header = ({ handleOrderPopup }) => {
                 </ul>
               </div>
               <div className="flex items-center gap-4">
+                <Link href={"/contact"}>
                 <button
                   className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
-                  onClick={() => {
-                    handleOrderPopup();
-                  }}
+                  
                 >
                  Contact us
                 </button>
+                </Link>
                 {/* Mobile Hamburger icon */}
                 <div className="md:hidden block">
                   {showMenu ? (
