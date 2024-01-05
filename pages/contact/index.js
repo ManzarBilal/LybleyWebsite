@@ -11,14 +11,14 @@ import {
 const contact = () => {
   return (
     <>
-      <div className='  bg-cover bg-center  h-[370px]' style={{backgroundImage:"url(contactUs.jpg)",marginTop:"72px"}}>
-       
+      <div className='  bg-cover bg-center  h-[370px]' style={{ backgroundImage: "url(contactUs.jpg)", marginTop: "72px" }}>
+
       </div>
       <div className=' flex justify-center items-center  '>
-       <div className='flex justify-center items-center p-4 bg-gradient-to-r from-[#f7bab7] to-[#c7eae4] w-[280px] rounded-b-lg text-white font-bold text-5xl '>
-       Contact us
-       </div>
+        <div className='flex justify-center items-center p-4 bg-gradient-to-r from-[#f7bab7] to-[#c7eae4] w-[280px] rounded-b-lg text-white font-bold text-5xl '>
+          Contact us
         </div>
+      </div>
       <div className='container  sm:py-0 '>
         <div className='   py-10'>
 
@@ -50,7 +50,7 @@ const contact = () => {
                   <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Message</button>
                 </form>
               </div>
- 
+
             </div>
             <div>
               <div className=' mb-8 text-center font-bold text-4xl'>
@@ -63,7 +63,7 @@ const contact = () => {
                 <div className='font-bold'>Lybley India Pvt Ltd.</div>
                 <div>A-9, A Block, Sector 59, Noida, Uttar Pradesh 201301</div>
                 <div className='mt-2 font-bold text-2xl'>Email :</div>
-                <div>lybley@gmail.com</div>
+                <div>help@lybley.com</div>
                 <div className='mt-2 font-bold text-2xl'>Contact No. :</div>
                 <div>7011071202</div>
                 <div className='mt-2 font-bold text-2xl'>Social Media</div>
