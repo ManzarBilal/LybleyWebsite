@@ -7,12 +7,14 @@ const serviceData = [
     id: 1,
     image: "webDevelopment.png",
     title: "Web Development",
+    link:"/webDevelopment",
     description: "Empowering your digital presence. We specialize in bespoke web development, creating standout websites that blend innovation and functionality, ensuring your online success"
   },
   {
     id: 2,
     image: "mobileApp.png",
     title: "Mobile App Development",
+    link:"/mobileAppDevelopment",
     description: "Transforming ideas into dynamic apps. Our mobile app development crafts innovative solutions for your digital needs, ensuring seamless user experiences that resonate and captivate your audience"
 
   },
@@ -20,6 +22,7 @@ const serviceData = [
     id: 3,
     image: "digitalMarketing.png",
     title: "Digital Marketing",
+    link:"/digitalMarketing",
     description: "Our digital marketing strategies are designed to propel your brand forward, leveraging targeted approaches that maximize visibility and engagement, ensuring your success in the digital sphere."
 
   },
@@ -27,12 +30,14 @@ const serviceData = [
     id: 4,
     image: "uiUx.png",
     title: "UI/UX Design",
+    link:"/uiUxDesign",
     description: "Crafting captivating experiences. Our UI/UX design expertise creates intuitive interfaces that blend creativity and functionality, ensuring memorable digital experiences."
   },
   {
     id: 5,
     image: "eCommerse.png",
     title: "E-Commerce Solution",
+    link:"/eCommerseSolution",
     description: "Transforming online retail experiences. Our tailored e-commerce solutions seamlessly merge intuitive design and robust functionality, elevating your customers' shopping journey"
 
   },
@@ -40,9 +45,9 @@ const serviceData = [
     id: 6,
     image: "mediaMarketing.png",
     title: "Social Media Marketing",
+    link:"/mediaMarketing",
     description: "Boosting your online presence. Our social media strategies craft engaging campaigns, amplifying your brand's voice to authentically connect with your audience"
   },
-
 ];
 
 const Services = ({ home }) => {
