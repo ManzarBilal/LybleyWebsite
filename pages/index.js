@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Services from './services'
 import Testimonial from '@/components/Testomonials'
+import Clients from '@/components/Clients'
 
 
 
@@ -28,6 +29,7 @@ export default function Home() {
           <HomePage />
           <Services home={true} />
           <Banner />
+          <Clients />
           <Testimonial />
         </div>
 
