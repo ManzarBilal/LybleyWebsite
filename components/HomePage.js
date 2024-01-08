@@ -90,7 +90,7 @@ const HomePage = () => {
       };
     return (
         <div className=''>
-            <div className="h-[680px] relative bg-black bg-opacity-30">
+            <div className="  sm:h-[980px] md:h-[680px]  relative bg-black bg-opacity-30">
                 <video
                     autoPlay
                     loop
@@ -101,8 +101,8 @@ const HomePage = () => {
                 </video>
                 <div className=" grid md:grid-cols-2 sm:grid-cols-1 h-full">
                     <div className="h-full flex justify-center items-center p-4  ">
-                        <div className="container grid grid-cols-1 gap-2">
-                            <div className='animatedLeft text-secondary font-bold text-xl'>We are creative </div>
+                        <div className="container grid grid-cols-1 gap-2  ">
+                            <div className='animatedLeft text-secondary font-bold text-xl mt-8'>We are creative </div>
                             <div className='animatedLeft text-white font-bold text-5xl'>Best IT <span className='text-secondary '>Solution</span></div>
                             <div className='animatedLeft text-white font-bold text-5xl'> Company</div>
                             <div className='animatedLeft mt-3 text-white text-xl'>

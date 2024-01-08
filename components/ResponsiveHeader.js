@@ -2,9 +2,12 @@ import React from "react";
 import { FaUserCircle } from "react-icons/fa";
 import Link from "next/link";
 import { NavbarLinks } from "./Header";
+import { useRouter } from "next/router";
 
 const ResponsiveHeader = ({ showMenu, setShowMenu }) => {
   // console.log("showMenu", showMenu);
+  const router=useRouter();
+   
   return (
     <div
       className={`${
@@ -26,7 +29,7 @@ const ResponsiveHeader = ({ showMenu, setShowMenu }) => {
                 <Link
                   href={data.link}
                   onClick={() => setShowMenu(false)}
-                  className="mb-5 inline-block"
+                  className={`mb-5 inline-block text-decoration-none ${router.pathname===data.link ? "text-primary" : "" }`}
                 >
                   {data.name}
                 </Link>
