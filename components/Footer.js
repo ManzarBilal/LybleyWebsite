@@ -5,7 +5,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaLocationArrow,
-  FaMobileAlt,
+  FaMobileAlt,FaEnvelope
 } from "react-icons/fa";
 
 
@@ -50,7 +50,7 @@ const Footer = () => {
                   <Link href={"/"}> <img src={"/Logo.png"} alt="" className="max-h-[64px] rounded-lg" /></Link>
                   {/* TravelloGo */}
                 </h1>
-                <p className="text-sm">
+                <p className="text-sm mt-4">
                   Discover Lybley for web and app development, e-commerce solutions, CRM services, and impactful digital and social media marketing. Elevate your brand's digital presence with our comprehensive suite of tailored solutions designed to drive growth and engagement.
                 </p>
                 <br />
@@ -58,6 +58,10 @@ const Footer = () => {
                   <FaLocationArrow />
                   <p className="text-sm">A-9, A Block, Sector 59, Noida, Uttar Pradesh 201301</p>
                 </div>
+                <div className="flex items-center gap-3 mt-3">
+                  <FaEnvelope />
+                  <p>help@lybley.com</p>
+                </div> 
                 <div className="flex items-center gap-3 mt-3">
                   <FaMobileAlt />
                   <p>+91 7011071202</p>

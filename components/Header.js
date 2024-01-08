@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 export const NavbarLinks = [
   {
     name: "Sevices",
-    link: "/",
+    link: "/services",
   },
   {
     name: "Insights",
@@ -24,7 +24,11 @@ export const NavbarLinks = [
     name: "Blogs",
     link: "/blogs",
   },
-
+  {
+    name: "Careers",
+    link: "/careers",
+  },
+   
 ];
 
 const DropdownLinks = [
@@ -63,7 +67,7 @@ const Header = ({ handleOrderPopup }) => {
           <div className="container py-3 sm:py-0">
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-4  font-bold text-2xl">
-                <Link href={"/"} onClick={() => window?.scrollhref(0, 0)}>
+                <Link href={"/"}  >
                   <img src={"/Logo.png"} alt="" className="h-16 max-w-full rounded-lg" />
                 </Link>
                 {/* <span>TCJ hrefurism</span> */}

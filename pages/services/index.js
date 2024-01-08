@@ -75,17 +75,17 @@ const Services = ({ home }) => {
                   <h1 className=" mt-8 border-l-8 border-primary/50 py-2 pl-2 text-3xl font-bold">
                     Our Services
                   </h1>
-                  <p className="ms-5 text-justify w-[500px]">Fostering businesses with comprehensive IT solutions. Our services encompass cutting-edge development, tailored software solutions, and innovative technologies. We're dedicated to crafting scalable, efficient, and future-ready solutions that drive growth and success in today's dynamic digital landscape.</p>
+                  <p className="ms-5 text-justify w-[full] md:w-[500px]">Fostering businesses with comprehensive IT solutions. Our services encompass cutting-edge development, tailored software solutions, and innovative technologies. We're dedicated to crafting scalable, efficient, and future-ready solutions that drive growth and success in today's dynamic digital landscape.</p>
                   <button className="ms-5 mt-3 bg-black text-white px-3 py-1  " onClick={handleScroll}>
                     Explore More
                   </button>
                 </div>
                 <div>
-                  <img src="services.png" className="mx-auto h-[400px]" alt="image" />
+                  <img src="services.png" className="mx-auto h-[200px]  md:h-[400px]" alt="image" />
                 </div>
               </div>
               <h3 className="text-center font-bold py-3 mt-8 text-2xl text-secondary">Discover the key features</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-3">
                 {serviceData.map((item, index) => (
                   <Card isServices={true} key={item.id} index={index} {...item} />
                 ))}

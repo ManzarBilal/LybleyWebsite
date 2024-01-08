@@ -9,13 +9,16 @@ const techLogo = [
   { logo: "mongo.png", name: "Mongo DB" },
   { logo: "express.png", name: "Express JS" },
   { logo: "react.png", name: "React JS" },
-  { logo: "node.png", name: "Node Js" },
+  { logo: "node.png", name: "Node JS" },
   { logo: "reactNative.png", name: "React Native" },
   { logo: "next.svg", name: "Next JS" },
   { logo: "javascript.png", name: "JavaScript" },
+  { logo: "tailwind.png", name: "Tailwind CSS" },
+  { logo: "bootstrap.png", name: "Bootstrap" },
   { logo: "firebase.png", name: "Firebase" },
   { logo: "aws.png", name: "AWS" },
   { logo: "vercel.svg", name: "Vercel " },
+ 
 ]
 const Banner = () => {
   return (
@@ -23,13 +26,13 @@ const Banner = () => {
       <div className="min-h-[550px] bg-gray-100">
         <div className="min-h-[550px] flex justify-center items-center backdrop-blur-xl py-12 sm:py-0 ">
           <div className="container">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center  ">
               {/* Image section */}
               <div data-aos="flip-up">
                 <img
-                  src={"/eCommerse.png"}
+                  src={"/programming.png"}
                   alt="eCommerce"
-                  className="max-w-[450px] h-[450px] w-full mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)] object-cover"
+                  className="max-w-[450px] h-[450px]  w-full mx-0 drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)] object-cover"
                 />
               </div>
               {/* text content section */}
@@ -58,9 +61,9 @@ const Banner = () => {
                               className="text-4xl flex items-center justify-center cursor-pointer    shadow-md p-4 rounded-md bg-violet-100 dark:bg-violet-400"
                             >
                               <img src={item?.logo} alt="image" className="  h-[50px]  "/>
-                              {/* <p className="invisible group-hover:visible absolute top-100 text-xl  text-center text-primary">
+                              <p className="invisible group-hover:visible absolute  bottom-0 text-xl font-bold text-center text-primary">
                                 {item?.name}
-                              </p> */}
+                              </p>
                             </div>
                           </div>
                         </div>
