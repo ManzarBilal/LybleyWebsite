@@ -1,17 +1,20 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import Slider from "react-slick";
+import Link from 'next/link';
 const testimonialData = [
     {
         id: 1,
         image: "webDevelopment.png",
         title: "Web Development",
+        link:"/webDevelopment",
         description: "Empowering your digital presence. We specialize in bespoke web development, creating standout websites that blend innovation and functionality, ensuring your online success"
       },
       {
         id: 2,
         image: "mobileApp.png",
         title: "Mobile App Development",
+        link:"/mobileAppDevelopment",
         description: "Transforming ideas into dynamic apps. Our mobile app development crafts innovative solutions for your digital needs, ensuring seamless user experiences that resonate and captivate your audience"
     
       },
@@ -19,6 +22,7 @@ const testimonialData = [
         id: 3,
         image: "digitalMarketing.png",
         title: "Digital Marketing",
+        link:"/digitalMarketing",
         description: "Our digital marketing strategies are designed to propel your brand forward, leveraging targeted approaches that maximize visibility and engagement, ensuring your success in the digital sphere."
     
       },
@@ -26,12 +30,14 @@ const testimonialData = [
         id: 4,
         image: "uiUx.png",
         title: "UI/UX Design",
+        link:"/uiUxDesign",
         description: "Crafting captivating experiences. Our UI/UX design expertise creates intuitive interfaces that blend creativity and functionality, ensuring memorable digital experiences."
       },
       {
         id: 5,
         image: "eCommerse.png",
         title: "E-Commerce Solution",
+        link:"/eCommerseSolution",
         description: "Transforming online retail experiences. Our tailored e-commerce solutions seamlessly merge intuitive design and robust functionality, elevating your customers' shopping journey"
     
       },
@@ -39,6 +45,7 @@ const testimonialData = [
         id: 6,
         image: "mediaMarketing.png",
         title: "Social Media Marketing",
+        link:"/mediaMarketing",
         description: "Boosting your online presence. Our social media strategies craft engaging campaigns, amplifying your brand's voice to authentically connect with your audience"
       },
   ];
@@ -135,10 +142,11 @@ const HomePage = () => {
             className="grid grid-cols-1 max-w-[500px] mx-auto flex justify-center items-center"
           >
             <Slider {...settings}>
-              {testimonialData.map(({ id, title, description, image }) => {
+              {testimonialData.map(({ id, title, description, image,link }) => {
                 return (
                   <div key={id} className="my-6">
                     <div className="flex flex-col justify-center items-center gap-4 text-center p-4 mx-4 rounded-xl dark:bg-gray-800 relative">
+                     <Link href={link}>
                       <img
                         src={image}
                         alt=""
@@ -146,6 +154,7 @@ const HomePage = () => {
                       />
                       <h1 className="text-xl text-white font-bold">{title}</h1>
                       <p className="text-white text-sm">{description}</p>
+                      </Link>
                     </div>
                   </div>
                 );

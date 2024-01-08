@@ -2,12 +2,12 @@ import Link from "next/link";
 import React from "react";
  
 
-const  Card = ({ isServices, image, date, title, description, author,index }) => {
+const  Card = ({ isServices, image, date, title,link, description, author,index }) => {
     
   return (
     <>
       <Link
-        href={`/blogs/${title}`}
+        href={`/${link}`}
         onClick={() => {
           window?.scrollTo(0, 0);
           // window.scroll({
@@ -16,7 +16,7 @@ const  Card = ({ isServices, image, date, title, description, author,index }) =>
           //   behavior: "smooth",
           // });
         }}
-        state={{ image, date, title, description, author }}
+        state={{ image, date, title, description, author,link }}
       >
         <div className={`p-4 shadow-lg transition-all duration-500 hover:shadow-xl dark:bg-slate-950 dark:text-white rounded-lg m-2`}>
           <div className="overflow-hidden">
