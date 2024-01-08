@@ -63,7 +63,7 @@ const Services = ({ home }) => {
     <>
       <div className={`dark:bg-gray-900 dark:text-white py-10 ${home ? "" : "mt-14"}`}>
         <section data-aos="fade-up" className="container ">
-          {home ? <><h3 className={`text-center font-bold py-3 mb-6 text-3xl  text-secondary`}>Discover the key features</h3>
+          {home ? <><h3 className={`text-center font-bold py-3 mb-6 text-3xl  text-black`}>Discover the key features</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
               {serviceData.map((item, index) => (
                 <Card isServices={true} key={item.id} index={index} {...item} />

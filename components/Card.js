@@ -2,20 +2,12 @@ import Link from "next/link";
 import React from "react";
  
 
-const  Card = ({ isServices, image, date, title,link, description, author,index }) => {
+const  Card = ({ isServices, image, date, title, link, description, author,index }) => {
     
   return (
     <>
       <Link
         href={`/${link}`}
-        onClick={() => {
-          window?.scrollTo(0, 0);
-          // window.scroll({
-          //   top: 0,
-          //   left: 0,
-          //   behavior: "smooth",
-          // });
-        }}
         state={{ image, date, title, description, author,link }}
       >
         <div className={`p-4 shadow-lg transition-all duration-500 hover:shadow-xl dark:bg-slate-950 dark:text-white rounded-lg m-2`}>
