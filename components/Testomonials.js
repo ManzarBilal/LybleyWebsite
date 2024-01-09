@@ -68,11 +68,9 @@ const Testimonial = () => {
           {/* Header section */}
           <div className="text-center mb-20 max-w-[400px] mx-auto">
             <h1 className="text-4xl font-bold">What our client say.</h1>
-            <p className="text-xs text-gray-400">
+            <p className="text-xs text-gray-400 mt-3">
               {" "}
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
-              nesciunt explicabo a! Laborum delectus aliquam labore, earum rerum
-              quam! Nulla?
+              Our clients express admiration for our transformative solutions, echoing their success stories through our collaborative ventures.
             </p>
           </div>
           {/* testimonial section */}
@@ -84,7 +82,7 @@ const Testimonial = () => {
             <Slider {...settings}>
               {testimonialData.map(({ id, name, text, img }) => {
                 return (
-                  <div key={id} className="my-6">
+                  <div key={id} className="my-4">
                     <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative">
                       <img
                         src={img}

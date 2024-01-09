@@ -12,28 +12,28 @@ import {
 const FooterLinks = [
   {
     title: "Services",
-    link: "/services",
+    link: "services",
   },
-  {
-    title: "Insights",
-    link: "/insights",
-  },
+  // {
+  //   title: "Insights",
+  //   link: "/insights",
+  // },
   {
     title: "About",
-    link: "/about",
+    link: "about",
   },
 
   {
     title: "Blogs",
-    link: "/blogs",
+    link: "blogs",
   },
   {
     title: "Careers",
-    link: "/careers",
+    link: "careers",
   },
   {
     title: "Contact us",
-    link: "/contact",
+    link: "contact",
   },
 ];
 
@@ -76,8 +76,8 @@ const Footer = () => {
                       Important Links
                     </h1>
                     <ul className="flex flex-col gap-3">
-                      {FooterLinks.map((link) => (
-                        <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200">
+                      {FooterLinks.map((link,index) => (
+                        <li className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-700 dark:text-gray-200" key={index}>
                           <Link
                             href={link.link}
                             onClick={() => window.scrollTo(0, 0)}
@@ -97,9 +97,9 @@ const Footer = () => {
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.783672779409!2d77.36534197457178!3d28.606265885274766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef5e6156c623%3A0xfc1292095a4933f9!2sLYBLEY!5e0!3m2!1sen!2sin!4v1704344578953!5m2!1sen!2sin"
                         height="260"
                         width={"100%"}
-                        allowfullscreen=""
+                        allowFullScreen=""
                         loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
+                        referrerPolicy="no-referrer-when-downgrade"
                         style={{ borderRadius: "20px" }}
                       ></iframe>
                     </div>

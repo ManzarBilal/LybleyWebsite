@@ -12,24 +12,15 @@ const About = () => {
             About us
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            ducimus cupiditate quo harum officia perspiciatis hic ut sunt
-            repudiandae, laboriosam expedita nostrum tempora, consectetur
-            itaque, voluptate error aperiam corrupti ullam aspernatur a!
-            Dolorem, reprehenderit amet quidem deleniti iure rem vel a enim
-            ipsam hic numquam consequatur eius id eaque accusamus repudiandae
-            impedit, quisquam non, harum inventore ratione? Tempora voluptatum
-            ut eligendi corrupti esse, repellat nesciunt illum facilis officiis?
-            Nisi quidem officiis asperiores nostrum ipsa maiores explicabo quia!
-            Corporis provident asperiores fuga eligendi rem temporibus possimus
-            autem excepturi! Facilis sunt corrupti nesciunt asperiores, ab
-            consectetur doloremque, velit a mollitia possimus quaerat!
+          At Lybley, our unwavering passion lies in the art of transforming visionary ideas into impactful digital realities. Our journey is marked by an unrelenting pursuit of excellence, propelling us to the forefront of technological innovation and digital solutions. This dedication has firmly established us as trailblazers, shaping the evolving landscape of technology with our ingenuity and commitment to groundbreaking solutions.
           </p>
-          <br />
+          <h2 className=" text-2xl font-bold mt-2">Our Vision</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
-            suscipit minus similique aliquam recusandae quisquam id nulla
-            tempora voluptate vero.
+          Driven by a vision to redefine the digital landscape, we aim to empower businesses, large and small, to harness the full potential of technology. We believe in crafting experiences that resonate, solutions that inspire, and strategies that deliver tangible results.
+          </p>
+          <h2 className=" text-2xl font-bold mt-2">Who We Are</h2>
+          <p>
+          We are a team of tech enthusiasts, creative minds, and strategic thinkers united by a common purpose—to bring your digital dreams to life. Our diverse skill set and collective expertise allow us to offer a comprehensive suite of services tailored to meet your unique needs.
           </p>
         </div>
       </div>

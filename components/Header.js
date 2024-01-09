@@ -10,23 +10,23 @@ import { useRouter } from "next/router";
 export const NavbarLinks = [
   {
     name: "Sevices",
-    link: "/services",
+    link: "services",
   },
   {
     name: "Insights",
-    link: "/insights",
+    link: "insights",
   },
   {
     name: "About",
-    link: "/about",
+    link: "about",
   },
   {
     name: "Blogs",
-    link: "/blogs",
+    link: "blogs",
   },
   {
     name: "Careers",
-    link: "/careers",
+    link: "careers",
   },
    
 ];
@@ -75,32 +75,32 @@ const Header = ({ handleOrderPopup }) => {
               <div className="hidden md:block">
                 <ul className="flex items-center gap-6 animatedRight ">
                   <li className="py-4">
-                    <Link href="/services" className={`text-decoration-none ${router.pathname==="/services" ? "text-primary" : "" }`} >
+                    <Link href="services" className={`text-decoration-none ${router.pathname==="/services" ? "text-primary" : "" }`} >
                       Services
                     </Link>
                   </li>
-                  <li className="py-4">
+                  {/* <li className="py-4">
                     <Link href="/insights" className={`text-decoration-none ${router.pathname==="/insights" ? "text-primary" : "" }`} >
                       Insights
                     </Link>
-                  </li>
+                  </li> */}
                   <li className="py-4">
-                    <Link href="/blogs" className={`text-decoration-none ${router.pathname==="/blogs" ? "text-primary" : "" }`} >
+                    <Link href="blogs" className={`text-decoration-none ${router.pathname==="/blogs" ? "text-primary" : "" }`} >
                       Blogs
                     </Link>
                   </li>
                   
                   <li className="py-4">
-                    <Link href="/about" className={`text-decoration-none ${router.pathname==="/about" ? "text-primary" : "" }`} >
+                    <Link href="about" className={`text-decoration-none ${router.pathname==="/about" ? "text-primary" : "" }`} >
                       About
                     </Link>
                   </li>
                   <li className="py-4">
-                    <Link href="/careers" className={`text-decoration-none ${router.pathname==="/careers" ? "text-primary" : "" }`} >
+                    <Link href="careers" className={`text-decoration-none ${router.pathname==="/careers" ? "text-primary" : "" }`} >
                       Careers
                     </Link>
                   </li>
-                  <li className="group relative cursor-pointer">
+                  {/* <li className="group relative cursor-pointer">
                     <Link
                       href="/"
                       className="flex h-[72px] items-center gap-[2px]"
@@ -124,11 +124,11 @@ const Header = ({ handleOrderPopup }) => {
                         ))}
                       </ul>
                     </div>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className="flex items-center gap-4">
-                <Link href={"/contact"}>
+                <Link href={"contact"}>
                 <button
                   className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
                   

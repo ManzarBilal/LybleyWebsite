@@ -16,7 +16,7 @@ const webDevelopment = () => {
 
       <div className='grid grid-cols-1 md:grid-cols-2 items-center'>
       <div>
-      <img src="webDevelopment.png" alt="web" className='mx-auto h-[300px]' />
+      <img src="eCommerse.png" alt="web" className='mx-auto h-[300px]' />
       </div>
         <div>
         <h2 className='font-bold text-2xl text-secondary'>E-commerce Solutions</h2>
@@ -31,12 +31,12 @@ const webDevelopment = () => {
         </div>
         </div>
         <div>
-      <img src="webDevelopment.png" alt="web" className='mx-auto h-[300px]' />
+      <img src="crm.png" alt="web" className='mx-auto h-[300px]' />
       </div>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 items-center mt-4'>
       <div>
-      <img src="webDevelopment.png" alt="web" className='mx-auto h-[300px]' />
+      <img src="ticketBooking.png" alt="web" className='mx-auto h-[300px]' />
       </div>
         <div>
         <h2 className='font-bold text-2xl text-secondary'>Ticket Booking Systems</h2>
@@ -52,7 +52,7 @@ const webDevelopment = () => {
         </div>
         </div>
         <div>
-      <img src="webDevelopment.png" alt="web" className='mx-auto h-[300px]' />
+      <img src="porfolioWebsite.png" alt="web" className='mx-auto h-[300px]' />
       </div>
       </div>
 

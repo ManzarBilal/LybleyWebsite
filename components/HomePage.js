@@ -7,14 +7,14 @@ const testimonialData = [
         id: 1,
         image: "webDevelopment.png",
         title: "Web Development",
-        link:"/webDevelopment",
+        link:"webDevelopment",
         description: "Empowering your digital presence. We specialize in bespoke web development, creating standout websites that blend innovation and functionality, ensuring your online success"
       },
       {
         id: 2,
         image: "mobileApp.png",
         title: "Mobile App Development",
-        link:"/mobileAppDevelopment",
+        link:"mobileAppDevelopment",
         description: "Transforming ideas into dynamic apps. Our mobile app development crafts innovative solutions for your digital needs, ensuring seamless user experiences that resonate and captivate your audience"
     
       },
@@ -22,7 +22,7 @@ const testimonialData = [
         id: 3,
         image: "digitalMarketing.png",
         title: "Digital Marketing",
-        link:"/digitalMarketing",
+        link:"digitalMarketing",
         description: "Our digital marketing strategies are designed to propel your brand forward, leveraging targeted approaches that maximize visibility and engagement, ensuring your success in the digital sphere."
     
       },
@@ -30,14 +30,14 @@ const testimonialData = [
         id: 4,
         image: "uiUx.png",
         title: "UI/UX Design",
-        link:"/uiUxDesign",
+        link:"uiUxDesign",
         description: "Crafting captivating experiences. Our UI/UX design expertise creates intuitive interfaces that blend creativity and functionality, ensuring memorable digital experiences."
       },
       {
         id: 5,
         image: "eCommerse.png",
         title: "E-Commerce Solution",
-        link:"/eCommerseSolution",
+        link:"eCommerseSolution",
         description: "Transforming online retail experiences. Our tailored e-commerce solutions seamlessly merge intuitive design and robust functionality, elevating your customers' shopping journey"
     
       },
@@ -45,7 +45,7 @@ const testimonialData = [
         id: 6,
         image: "mediaMarketing.png",
         title: "Social Media Marketing",
-        link:"/mediaMarketing",
+        link:"mediaMarketing",
         description: "Boosting your online presence. Our social media strategies craft engaging campaigns, amplifying your brand's voice to authentically connect with your audience"
       },
   ];
@@ -107,17 +107,11 @@ const HomePage = () => {
                             <div className='animatedLeft text-white font-bold text-5xl'> Company</div>
                             <div className='animatedLeft mt-3 text-white text-xl'>
                                 <TypeAnimation sequence={[
-                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success. Specializing in: Web Development',3000,
-                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success. Specializing in: Mobile App Development',3000,
-                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success. Specializing in: Digital Marketing',3000,
-                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success. Specializing in: UI/UX Design',3000,
-                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success. Specializing in: E-commerce-Solutions',3000,
-                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success. Specializing in: Social Media Marketing',
-                                  3000
+                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success.',1000
                                 ]}
                                 wrapper='span'
                                 speed={50}
-                                repeat={Infinity}
+                                // repeat={Infinity}
                                 cursor={false}
                                 />
                                 </div>

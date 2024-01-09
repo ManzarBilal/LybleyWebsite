@@ -17,7 +17,7 @@ const mobileApp = () => {
 
     <div className='grid grid-cols-1 md:grid-cols-2 items-center'>
     <div>
-    <img src="mobileApp.png" alt="web" className='mx-auto h-[300px]' />
+    <img src="eCommApp.png" alt="web" className='mx-auto h-[300px]' />
     </div>
       <div>
       <h2 className='font-bold text-2xl text-secondary'>E-commerce Apps</h2>
@@ -34,12 +34,12 @@ const mobileApp = () => {
       </div>
       </div>
       <div>
-    <img src="mobileApp.png" alt="web" className='mx-auto h-[300px]' />
+    <img src="crmIntegration.png" alt="web" className='mx-auto h-[300px]' />
     </div>
     </div>
     <div className='grid grid-cols-1 md:grid-cols-2 items-center mt-4'>
     <div>
-    <img src="mobileApp.png" alt="web" className='mx-auto h-[300px]' />
+    <img src="ticketBooking.png" alt="web" className='mx-auto h-[300px]' />
     </div>
       <div>
       <h2 className='font-bold text-2xl text-secondary'>Ticket Booking Solutions</h2>

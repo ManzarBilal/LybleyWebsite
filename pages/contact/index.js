@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import {
   FaFacebook,
   FaInstagram,
@@ -9,6 +9,46 @@ import {
 } from "react-icons/fa";
 
 const contact = () => {
+
+    const [formData, setFormData] = useState({
+      name: '',
+      contact: '',
+      email: '',
+      message: ''
+    });
+  
+    const handleInputChange = (event) => {
+      const { name, value } = event.target;
+      setFormData({
+        ...formData,
+        [name]: value
+      });
+    };
+  
+    const handleSubmit = async (event) => {
+      event.preventDefault();
+  
+      try {
+        const response = await fetch('/api/sendMail', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        });
+  
+        if (response.ok) {
+          console.log('Message sent successfully');
+          // Show success message or perform other actions upon successful submission
+        } else {
+          console.error('Failed to send message');
+          // Handle error scenarios
+        }
+      } catch (error) {
+        console.error('Error sending message:', error);
+        // Handle error scenarios
+      }
+    };
   return (
     <>
       <div className='  bg-cover bg-center  h-[370px]' style={{ backgroundImage: "url(contactUs.jpg)", marginTop: "72px" }}>
@@ -27,27 +67,27 @@ const contact = () => {
               <div className="font-bold text-4xl  text-center mb-8">ONLINE INQUIRY</div>
               <div className="max-w-md mx-auto bg-gray-200  p-4 rounded-md shadow-md  ">
 
-                <form action="#" method="POST">
+                <form onSubmit={handleSubmit}>
                   <div className=" ">
                     <div className="mb-4">
                       <label for="name" className="block text-gray-700 font-semibold mb-2">Name</label>
-                      <input type="text" id="name" name="name" placeholder="Enter your name" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" />
+                      <input type="text" id="name" name="name" placeholder="Enter your name" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" onChange={handleInputChange} />
                     </div>
                     <div className="mb-4">
                       <label for="contact" className="block text-gray-700 font-semibold mb-2">Contact</label>
-                      <input type="text" id="contact" name="contact" placeholder="Enter your contact" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" />
+                      <input type="text" id="contact" name="contact" placeholder="Enter your contact" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" onChange={handleInputChange}/>
                     </div>
                   </div>
                   <div className="mb-4">
                     <label for="email" className="block text-gray-700 font-semibold mb-2">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" />
+                    <input type="email" id="email" name="email" placeholder="Enter your email" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" onChange={handleInputChange}/>
                   </div>
 
                   <div className="mb-6">
                     <label for="message" className="block text-gray-700 font-semibold mb-2">Message</label>
-                    <textarea id="message" name="message" placeholder="Enter your message" rows="2" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500"></textarea>
+                    <textarea id="message" name="message" placeholder="Enter your message" rows="2" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" onChange={handleInputChange}></textarea>
                   </div>
-                  <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Message</button>
+                  <button type="submit" value="Submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Message</button>
                 </form>
               </div>
 
