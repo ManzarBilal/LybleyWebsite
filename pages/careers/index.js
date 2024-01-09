@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const careers = () => {
   const handleScroll = () => {
@@ -7,6 +7,45 @@ const careers = () => {
       top: window.pageYOffset + 410,
       behavior: 'smooth', // Optional: Smooth scrolling animation
     });
+  };
+  const [formData, setFormData] = useState({
+    name: '',
+    contact: '',
+    email: '',
+    message: ''
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      const response = await fetch('/api/sendMail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        console.log('Message sent successfully');
+        // Show success message or perform other actions upon successful submission
+      } else {
+        console.error('Failed to send message');
+        // Handle error scenarios
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      // Handle error scenarios
+    }
   };
   return (
     <> 
@@ -48,30 +87,26 @@ const careers = () => {
      <div className="py-8 px-4">
   <div className="max-w-md mx-auto bg-gray-200 p-6 rounded-md shadow-md">
     <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
-    <form action="#" method="POST">
+    <form action="#" method="POST" onSubmit={handleSubmit}>
       <div className="grid grid-cols-2 gap-2">
       <div className="mb-4">
         <label for="name" className="block text-gray-700 font-semibold mb-2">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" />
+        <input type="text" id="name" name="name" placeholder="Enter your name" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" onChange={handleInputChange}/>
       </div>
       <div className="mb-4">
         <label for="contact" className="block text-gray-700 font-semibold mb-2">Contact</label>
-        <input type="text" id="contact" name="contact" placeholder="Enter your contact" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" />
+        <input type="text" id="contact" name="contact" placeholder="Enter your contact" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" onChange={handleInputChange}/>
       </div>
       </div>
       <div className="mb-4">
         <label for="email" className="block text-gray-700 font-semibold mb-2">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" />
-      </div>
-      <div className="mb-4">
-        <label for="resume" className="block text-gray-700 font-semibold mb-2">Resume</label>
-        <input type="file" id="resume" name="resume" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" />
+        <input type="email" id="email" name="email" placeholder="Enter your email" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" onChange={handleInputChange}/>
       </div>
       <div className="mb-6">
         <label for="message" className="block text-gray-700 font-semibold mb-2">Message</label>
-        <textarea id="message" name="message" placeholder="Enter your message" rows="4" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500"></textarea>
+        <textarea id="message" name="message" placeholder="Enter your message" rows="4" className="w-full border-gray-300 rounded-md p-2 focus:outline-none focus:border-blue-500" onChange={handleInputChange}></textarea>
       </div>
-      <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Submit</button>
+      <button type="submit" value="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Submit</button>
     </form>
     </div>
   </div>

@@ -52,7 +52,7 @@ const Banner = () => {
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-4 mt-8 gap-4 items-center">
                   {techLogo?.map((item, i) =>
-                    <div data-aos="zoom-in" className=" ">
+                    <div data-aos="zoom-in" className=" " key={i}>
                       <div className="space-y-6">
                         <div className=" ">
                           <div className="relative group ">
