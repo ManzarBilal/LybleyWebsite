@@ -4,21 +4,21 @@ import Slider from "react-slick";
 const testimonialData = [
   {
     id: 1,
-    name: "Samuel",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/101/101",
+    name: "Vivek Sharma",
+    text: "Lybley's website surpassed expectations! Seamless navigation and excellent support make them a top choice.",
+    img: "https://t4.ftcdn.net/jpg/01/56/19/15/360_F_156191504_F8KusEJnAdRbyztflKKtQnnU43GIyWv4.jpg",
   },
   {
     id: 1,
-    name: "John Doe",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/102/102",
+    name: "Rahul Gupta",
+    text: "Flawless process, impeccable outcome! Lybley delivered exactly what I envisioned for my website. Highly satisfied!",
+    img: "https://t3.ftcdn.net/jpg/02/69/98/98/360_F_269989865_mMfRFRN4mtDOtnHA0RFXcURX4n761zwd.jpg",
   },
   {
     id: 1,
-    name: "Smith",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
-    img: "https://picsum.photos/103/103",
+    name: "Simmy",
+    text: "Highly impressed! Lybley created a tailored website, delivering a seamless process and an exceptional final product.",
+    img: "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202301/aarti-sixteen_nine_1.jpg?size=948:533",
   },
 ];
 
@@ -87,7 +87,7 @@ const Testimonial = () => {
                       <img
                         src={img}
                         alt=""
-                        className="rounded-full block mx-auto"
+                        className="rounded-full block mx-auto h-[120px] w-[120px]"
                       />
                       <h1 className="text-xl font-bold">{name}</h1>
                       <p className="text-gray-500 text-sm">{text}</p>

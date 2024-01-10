@@ -49,7 +49,7 @@ const careers = () => {
   };
   return (
     <> 
-      <div className="bg-cover bg-center h-[400px]" style={{ backgroundImage: 'url("career.jpg")',marginTop:"70px" }}> 
+      <div className="bg-cover bg-center h-[400px]" style={{ backgroundImage: 'url("https://sparetrade-bucket.s3.ap-south-1.amazonaws.com/career.jpg-1704870006840-776787815")',marginTop:"70px" }}> 
       <div className='bg-black bg-opacity-40  h-[400px]'>
       <h1 className='text-center text-white font-bold text-4xl pt-12'>Careers</h1>
       <p className='text-center text-white font-bold mt-4 text-2xl'> Join Our Team and Shape the Future of Technology!</p>

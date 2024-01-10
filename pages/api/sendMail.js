@@ -21,7 +21,7 @@ export default async function handler(req, res) {
   // Email content
   let mailOptions = {
     from: `<${email}>`,
-    to: 'manzarbilal0786@gmail.com', 
+    to: 'help@lybley.com', 
     subject: 'New Contact Form Submission',
     text: `
       Name: ${name}
