@@ -16,11 +16,9 @@ const ResponsiveHeader = ({ showMenu, setShowMenu }) => {
     >
       <div className="card">
         <div className="flex items-center justify-start gap-3">
-          <FaUserCircle size={50} />
-          <div>
-            <h1>Hello User</h1>
-            <h1 className="text-sm text-slate-500">Premium user</h1>
-          </div>
+        <Link href={"/"}  onClick={() => setShowMenu(false)} >
+                  <img src={"/Logo.png"} alt="" className="h-16 max-w-full rounded-lg" />
+                </Link>
         </div>
         <nav className="mt-12">
           <ul className="space-y-4 text-xl">

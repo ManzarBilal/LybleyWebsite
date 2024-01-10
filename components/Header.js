@@ -12,10 +12,7 @@ export const NavbarLinks = [
     name: "Sevices",
     link: "services",
   },
-  {
-    name: "Insights",
-    link: "insights",
-  },
+  
   {
     name: "About",
     link: "about",
@@ -27,6 +24,10 @@ export const NavbarLinks = [
   {
     name: "Careers",
     link: "careers",
+  },
+  {
+    name: "Contact us",
+    link: "contact",
   },
    
 ];
