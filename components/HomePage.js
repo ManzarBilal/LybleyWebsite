@@ -88,6 +88,17 @@ const HomePage = () => {
           },
         ],
       };
+
+      const handleScroll = () => {
+        // Scrolls down 100 pixels vertically on button click
+        window.scrollTo({
+          top: window.pageYOffset + 700,
+          behavior: 'smooth', // Optional: Smooth scrolling animation
+        });
+      };
+
+      //https://sparetrade-bucket.s3.ap-south-1.amazonaws.com/videoHome.mp4-1704869755703-333177367
+
     return (
         <div className=''>
             <div className="  sm:h-[980px] md:h-[680px]  relative bg-black bg-opacity-30">
@@ -97,7 +108,7 @@ const HomePage = () => {
                     muted
                     className="absolute right-0 top-0 h-full w-full object-cover z-[-1]"
                 >
-                    <source src={"/videoHome.mp4"} type="video/mp4" />
+                    <source src={"https://sparetrade-bucket.s3.ap-south-1.amazonaws.com/videoHome.mp4-1704869755703-333177367"} type="video/mp4" />
                 </video>
                 <div className=" grid md:grid-cols-2 sm:grid-cols-1 h-full">
                     <div className="h-full flex justify-center items-center p-4  ">
@@ -107,7 +118,7 @@ const HomePage = () => {
                             <div className='animatedLeft text-white font-bold text-5xl'> Company</div>
                             <div className='animatedLeft mt-3 text-white text-xl'>
                                 <TypeAnimation sequence={[
-                                  'Empowering businesses with top IT solutions and unparalleled marketing strategies for digital success.',1000
+                                  'Empowering Businesses: Unmatched IT Solutions and Dynamic Marketing Strategies for Unrivaled Digital Success. Transform Your Vision into Reality with Our Expertise and Propel Your Business to New Heights!',1000
                                 ]}
                                 wrapper='span'
                                 speed={50}
@@ -118,15 +129,16 @@ const HomePage = () => {
                             <div className='animatedLeft mt-4'>
                                 <button
                                     className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1"
+                                 onClick={handleScroll}
                                 >
                                     Explore More
                                 </button>
-                                <button
+                                {/* <button
                                     className="mx-4 bg-gradient-to-r from-white to-white hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-secondary px-3 py-1  "
-
+                                    onClick={handleScroll}
                                 >
                                     Explore More
-                                </button>
+                                </button> */}
                             </div>
                         </div>
                     </div>

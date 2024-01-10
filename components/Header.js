@@ -66,7 +66,7 @@ const Header = ({ handleOrderPopup }) => {
         <div className="bg-gradient-to-r from-[#FFFFFF] to-[#a7a7a9]  ">
           <div className="container py-3 sm:py-0">
             <div className="flex justify-between items-center">
-              <div className="flex items-center gap-4  font-bold text-2xl">
+              <div className="flex items-center gap-4 py-1 font-bold text-2xl">
                 <Link href={"/"}  >
                   <img src={"/Logo.png"} alt="" className="h-16 max-w-full rounded-lg" />
                 </Link>
