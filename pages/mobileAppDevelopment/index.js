@@ -17,7 +17,7 @@ const mobileApp = () => {
 
       <div className='grid grid-cols-1 md:grid-cols-2 items-center'>
         <div className='hidden md:block'>
-          <img src="eCommApp.png" alt="web" className='mx-auto h-[300px]' />
+          <img src="mobileEcommerce.png" alt="web" className='mx-auto h-[300px]' />
         </div>
         <div>
           <h2 className='font-bold text-2xl text-secondary'>E-commerce Apps</h2>

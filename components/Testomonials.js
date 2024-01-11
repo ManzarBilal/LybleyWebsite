@@ -4,6 +4,12 @@ import Slider from "react-slick";
 const testimonialData = [
   {
     id: 1,
+    name: "Ankit Singh",
+    text: "After Passout website surpassed expectations! Seamless navigation and excellent support make them a top choice.",
+    img: "afterPassout.png",
+  },
+  {
+    id: 2,
     name: "Vivek Sharma",
     text: "Lybley's website surpassed expectations! Seamless navigation and excellent support make them a top choice.",
     img: "https://t4.ftcdn.net/jpg/01/56/19/15/360_F_156191504_F8KusEJnAdRbyztflKKtQnnU43GIyWv4.jpg",
@@ -84,11 +90,13 @@ const Testimonial = () => {
                 return (
                   <div key={id} className="my-4">
                     <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg p-4 mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative">
-                      <img
-                        src={img}
-                        alt=""
-                        className="rounded-full block mx-auto h-[120px] w-[120px]"
-                      />
+                      <div className="h-[120px] w-[120px]  flex items-center justify-center ">
+                        <img
+                          src={img}
+                          alt=""
+                          className=" object-cover  mx-auto "
+                        />
+                      </div>
                       <h1 className="text-xl font-bold">{name}</h1>
                       <p className="text-gray-500 text-sm">{text}</p>
                       <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">
